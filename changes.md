@@ -1,11 +1,20 @@
-### v4
-支持 Xperia Pro
+### v13
+Add Slot switch detection
 
-### v3
-修复了一处卸载时可能残留的bug
+### v12
+Support for Xperia Pro
 
-### v2
-支持更多硬件版本
+### v11
+Fixed a potential bug where remnants could remain after uninstallation
 
-### v1
-初版，可能存在一些BUG
+### v10
+Support for more hardware versions
+
+### v9
+Fixed incomplete modifications caused by lack of system_ext on Android 10
+
+### v8
+Fixed issue preventing battery level functionality
+
+### v7
+Fixed battery anomaly errors in certain situations

@@ -1,23 +1,32 @@
 # mark2_5000
-Xperia II系列更换四代电池后扩容模块
+Expansion module for Xperia II series after replacing with fourth-generation battery
+
+Translated to English with auto slot detection.
 <br />
-## 本模块并不会让电池更耐用，不要因此冒险刷本模块
+## This module does not make the battery last longer — do not flash it recklessly for that reason
 <br />
 <br />
 
-四代电池数据来自 [sonyxperiadev/kernel](https://github.com/sonyxperiadev/kernel/tree/aosp/LA.UM.9.14.r1/arch/arm64/boot/dts/somc)
+fourth-generation battery data comes from [sonyxperiadev/kernel](https://github.com/sonyxperiadev/kernel/tree/aosp/LA.UM.9.14.r1/arch/arm64/boot/dts/somc)
 <br />
 
-仅适配 Xperia 四代电池，并且根据四代电池数据修改了
-1. 最高充电电压
-2. 最高充电电流
-3. 电池保护电压
-4. 阶梯充电电压 (虽然设置最高5000mV, 但实际只能到4500mV, 所以最终会影响电池容量)
-5. 充电截止电流
+Only supports Xperia fourth-generation batteries, and modifies the following based on the data:
+1. Maximum charging voltage
+2. Maximum charging current
+3. Battery protection voltage
+4. Stepped charging voltages
+5. Charging cutoff current
 <br />
 
-如果你更换其他第三方电池，请勿直接使用本模块<br />
-向电池供应商索要电池数据并自行修改以上数据
+Data exists but cannot be modified:
+1. Charging temperature curve
+2. 30W fast charging
+<br />
 <br />
 
-本项目提供的自动打包脚本，需要使用Linux并且安装zip，修改数据后运行 `./build.sh` 即可
+If you replaced with another fourth-party battery, do not use this module directly<br />
+Ask the battery supplier for battery data and modify the above values yourself
+>>>>>>> 1c30291 (mark2_5000: Push v13)
+<br />
+
+The auto-packaging script provided in this project requires Linux and zip to be installed. After modifying the data, run `./build.sh`
