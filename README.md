@@ -26,7 +26,6 @@ Data exists but cannot be modified:
 
 If you replaced with another fourth-party battery, do not use this module directly<br />
 Ask the battery supplier for battery data and modify the above values yourself
->>>>>>> 1c30291 (mark2_5000: Push v13)
 <br />
 
 The auto-packaging script provided in this project requires Linux and zip to be installed. After modifying the data, run `./build.sh`
